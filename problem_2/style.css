@@ -1,0 +1,133 @@
+/* Global body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #f0f0f0, #dfe9f3); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    height: 100vh; /* Ensure body takes full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scroll bars */
+}
+
+/* Header styling */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Form container styling */
+form {
+    width: 100%;
+    max-width: 600px; /* Form won't exceed this width */
+    padding: 40px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 15px; /* Rounded corners for the form */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+}
+
+/* Styling for the label */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+    width: 100%;
+    text-align: left;
+}
+
+/* Select input (dropdown) styling */
+select, input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa; /* Light background for inputs */
+    transition: all 0.7s ease-in-out;
+}
+
+/* Focus effect for inputs */
+select:focus, input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #3498db; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Blue glow effect */
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.7s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Responsive design for smaller devices */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%; /* Form takes 90% width on small screens */
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 30px; /* Smaller header font on mobile */
+    }
+}
+
+/* Adding success/error message styles (optional) */
+.message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.message.success {
+    color: #27ae60; /* Green for success messages */
+}
+
+.message.error {
+    color: #e74c3c; /* Red for error messages */
+}
+
+/* Add animation to form elements for smooth entry */
+form {
+    animation: formEntry 1s ease-in-out;
+}
+
+@keyframes formEntry {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

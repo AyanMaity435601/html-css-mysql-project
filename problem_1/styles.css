@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd; /* Light Blue Background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    color: #1976D2; /* Blue color for heading */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Label Styling */
+label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    padding: 12px 18px;
+    width: 100%;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #1976D2; /* Blue border when focused */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Button Focus Styling */
+button:focus {
+    outline: none;
+}
+
+/* Additional Styling for Better Layout */
+form p {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 15px;
+}
